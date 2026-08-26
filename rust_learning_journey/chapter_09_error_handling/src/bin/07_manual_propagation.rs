@@ -4,10 +4,10 @@ use std::io::Error;
 fn read_config() -> Result<File, Error> {
     let file = match File::open("my_file.txt") {
         Ok(file) => file,
-        Err(e) => return Err(e), 
+        Err(e) => return Err(e),
     };
-    
-    Ok(file) 
+
+    Ok(file)
 }
 
 fn main() {

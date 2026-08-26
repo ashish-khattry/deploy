@@ -1,5 +1,4 @@
 //03_the_semicolon_bug
-fn main()
-{
+fn main() {
     println!("hello world!");
 }

@@ -1,29 +1,23 @@
 //06_match_with_state_data
 #[derive(Debug)]
 #[allow(dead_code)]
-enum UsState
-{
+enum UsState {
     Alaska,
     Alabama,
 }
 #[allow(dead_code)]
-enum Coin
-{
+enum Coin {
     Penny,
     Quarter(UsState),
 }
-fn main()
-{
-    let c=Coin::Quarter(UsState::Alaska);
-    match c
-    {
-        Coin::Penny=>
-        {
+fn main() {
+    let c = Coin::Quarter(UsState::Alaska);
+    match c {
+        Coin::Penny => {
             println!("This is a penny");
         }
-        Coin::Quarter(state)=>
-        {
-            println!("This quarter belongs to {:?} state",state);
+        Coin::Quarter(state) => {
+            println!("This quarter belongs to {:?} state", state);
         }
     }
 }

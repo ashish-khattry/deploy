@@ -1,5 +1,4 @@
- mod server;
-fn main()
-{
+mod server;
+fn main() {
     server::router::terminal_output();
 }

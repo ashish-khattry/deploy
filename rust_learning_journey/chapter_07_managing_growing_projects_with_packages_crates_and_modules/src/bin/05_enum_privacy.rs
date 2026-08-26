@@ -1,28 +1,21 @@
 //05_enum_privacy
-mod network
-{
-    pub enum ServerState
-    {
+mod network {
+    pub enum ServerState {
         Online,
         Offline,
         Maintenance,
     }
 }
-fn main()
-{
-    let my_state=network::ServerState::Online;
-    match my_state
-    {
-        network::ServerState::Online=>
-        {
+fn main() {
+    let my_state = network::ServerState::Online;
+    match my_state {
+        network::ServerState::Online => {
             println!("Server state is online");
         }
-        network::ServerState::Offline=>
-        {
+        network::ServerState::Offline => {
             println!("Servere state is offline");
         }
-        network::ServerState::Maintenance=>
-        {
+        network::ServerState::Maintenance => {
             println!("Servere state is under maintenance");
         }
     }

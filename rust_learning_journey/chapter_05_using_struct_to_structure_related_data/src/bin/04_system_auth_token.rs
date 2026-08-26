@@ -1,7 +1,6 @@
 //04_system_auth_token
 struct AdmitToken;
-fn main()
-{
+fn main() {
     #[allow(unused_variables)]
-    let my_token=AdmitToken;
+    let my_token = AdmitToken;
 }

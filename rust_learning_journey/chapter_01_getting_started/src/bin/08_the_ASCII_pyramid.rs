@@ -1,6 +1,5 @@
 //08_the_ASCII_pyramind
-fn main()
-{
+fn main() {
     println!("    *");
     println!("   ***");
     println!("  *****");

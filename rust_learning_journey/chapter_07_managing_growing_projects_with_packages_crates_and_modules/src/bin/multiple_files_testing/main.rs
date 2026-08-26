@@ -1,16 +1,13 @@
 mod math;
 use std::io::Write;
-fn main()
-{
+fn main() {
     println!("Enter a number :-  ");
     std::io::stdout().flush().expect("Flushing error!");
-    let mut n=String::new();
+    let mut n = String::new();
     std::io::stdin().read_line(&mut n).expect("Input error!");
-    let n:i32=match n.trim().parse::<i32>()
-    {
-        Ok(number)=>number,
-        Err(_)=>
-        {
+    let n: i32 = match n.trim().parse::<i32>() {
+        Ok(number) => number,
+        Err(_) => {
             println!("This is invalid value !");
             return;
         }

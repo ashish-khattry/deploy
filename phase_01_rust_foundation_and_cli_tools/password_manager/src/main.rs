@@ -25,7 +25,6 @@ fn main() {
         };
 
         match choice {
-        
             1 => {
                 println!("Enter ID:");
                 let mut id = String::new();
@@ -40,7 +39,6 @@ fn main() {
                 println!("Password Saved Successfully!");
             }
 
-         
             2 => {
                 if id_list.is_empty() {
                     println!("No Password Saved!");
@@ -74,7 +72,6 @@ fn main() {
                 }
             }
 
-          
             4 => {
                 println!("Enter ID:");
 
@@ -103,7 +100,6 @@ fn main() {
                 }
             }
 
-         
             5 => {
                 println!("Enter ID:");
 
@@ -123,12 +119,10 @@ fn main() {
                 }
             }
 
-          
             6 => {
                 println!("Total Passwords = {}", password_list.len());
             }
 
-          
             7 => {
                 println!("Thank You For Using This App!");
                 break;
