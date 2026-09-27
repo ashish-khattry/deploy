@@ -12,7 +12,7 @@ fn guess_number(g:Guess){
 #[cfg(test)]
 mod testing{
     use super::*;
-    #[should_panic(expected="code is panic")]
+    #[should_panic(expected="Code is panic")]
     fn test(){
         let g1=Guess{ no:200 };
         guess_number(g1);
