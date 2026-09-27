@@ -7,6 +7,6 @@ mod testing{
     use super::*;
     #[test]
     fn test(){
-        assert!(greeting("devkinandan"),"Error chief: name is missing!");
+        assert!(greeting(""),"Error chief: name is missing!");
     }
 }
