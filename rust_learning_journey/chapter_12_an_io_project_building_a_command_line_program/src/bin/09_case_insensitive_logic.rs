@@ -22,7 +22,19 @@ fn run(config: &Config) -> Result<(), Box<dyn std::error::Error>> {
     println!("In file {}", config.file_path);
     let file_path = config.file_path.clone();
     let content = std::fs::read_to_string(file_path)?;
-    println!("File text:\n{content}");
+    let ignore_case=std::env::var("IGNORE_CASE").is_ok();
+    if ignore_case{
+        for line in search_insensitive(&config.query,&content)
+        {
+            println!("{line}");
+        }
+    }
+    else{
+        for line in search_sensitive(&config.query,&content){
+            println!("{line}");
+        }
+    }
+   
     Ok(())
 }
 fn main() {
@@ -74,7 +86,7 @@ It is demanding language.";
 It is secure.
 It is safe
 It is demanding language.";
-        let query="RuSt";
+        let query="RUSt";
         assert_eq!(search_insensitive(&query,&content),vec!["Rust is fast.".to_string()]);
     }
 }
