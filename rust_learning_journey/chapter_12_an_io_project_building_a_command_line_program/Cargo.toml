@@ -1,0 +1,6 @@
+[package]
+name = "chapter_12_an_io_project_building_a_command_line_program"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
