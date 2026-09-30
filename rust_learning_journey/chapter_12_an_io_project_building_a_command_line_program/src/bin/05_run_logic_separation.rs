@@ -18,9 +18,12 @@ fn main() {
         eprintln!("Error accur {e}");
         std::process::exit(1);
     });
-    run(&config);
+    if let Err(e) = run(&config) {
+        println!("{e}");
+    }
 }
-fn run(config:&Config){
-    println!("\nUser {} and Password {}", config.user, config.password);
+fn run(config: &Config) -> Result<(), Box<dyn std::error::Error>> {
+    let content = std::fs::read_to_string(&config.password)?;
+    println!("File text:\n{content}");
+    Ok(())
 }
-
