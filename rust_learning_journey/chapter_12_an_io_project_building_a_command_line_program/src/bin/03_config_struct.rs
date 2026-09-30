@@ -18,5 +18,5 @@ fn main(){
         println!("Error accur {e}");
         std::process::exit(1);
     });
-    println!("User {} and Password {}",config.user,config.password);
+    println!("\nUser {} and Password {}",config.user,config.password);
 }
