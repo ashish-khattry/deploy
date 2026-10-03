@@ -1,0 +1,9 @@
+fn main() {
+    let numbers = vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let n2: i32 = numbers
+        .into_iter()
+        .filter(|x| x % 2 == 0)
+        .map(|x| x * 2)
+        .sum();
+    println!("{}", n2)
+}
