@@ -1,0 +1,9 @@
+[package]
+name = "chapter_14_more_about_cargo_and_crates_io"
+version = "0.1.0"
+edition = "2024"
+[profile-dev]
+opt-level=0
+[profile-release]
+opt-level=3
+[dependencies]
