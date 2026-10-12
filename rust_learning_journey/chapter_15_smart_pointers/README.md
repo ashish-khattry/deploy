@@ -1,0 +1,1 @@
+"This repository contains 10 atomic programs mastering Rust Smart Pointers. Concepts covered: Box<T> (Heap allocation), Recursive Types (Cons List), Deref/DerefMut traits (Custom pointers and Coercion), Drop trait (Memory cleanup & Early Drop), Rc<T> (Multiple Ownership), RefCell<T> (Interior Mutability), and Weak<T> (Preventing Memory Leaks in Trees)."
