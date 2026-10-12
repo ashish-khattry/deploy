@@ -11,10 +11,10 @@ impl<T> std::ops::Deref for MyBox<T> {
     }
 }
 fn hello(s: &str) {
-    println!("Hello from inside custom box: {s}");
+    println!("Hello {s}");
 }
 fn main() {
-    let s = String::from("Rust Warrior");
+    let s = String::from("Rust");
     let m = MyBox::new(s);
     hello(&m);
 }
