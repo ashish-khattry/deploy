@@ -11,8 +11,7 @@ impl<T> std::ops::Deref for MyBox<T> {
     }
 }
 fn main() {
-    let x = 10;
+    let x = 5;
     let y = MyBox::new(x);
-    assert_eq!(*y, 100, "Custom deref operator does not work successfully!");
-    println!("Custom deref operator works successfully!");
+    println!("Original :{}, Dereferenced MyBox: {}", x, *y);
 }
