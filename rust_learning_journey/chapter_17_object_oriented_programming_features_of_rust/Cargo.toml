@@ -1,0 +1,6 @@
+[package]
+name = "chapter_17_object_oriented_programming_features_of_rust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
