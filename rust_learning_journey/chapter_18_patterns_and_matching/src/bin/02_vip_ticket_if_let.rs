@@ -1,6 +1,6 @@
 fn main(){
     let ticket=Some("VIP");
-    if let Some(_)=ticket{
+    if let Some("VIP")=ticket{
         println!("Entry allowed!");
     }
 }
