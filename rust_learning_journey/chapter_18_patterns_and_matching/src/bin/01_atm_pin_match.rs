@@ -2,7 +2,7 @@ fn main(){
     let pin=1234;
     match pin{
         1234=>{
-            println!("Accesee granted");
+            println!("Access granted");
         }
         _=>{
             println!("Access denied!");
